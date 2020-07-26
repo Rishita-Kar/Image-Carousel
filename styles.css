@@ -1,0 +1,38 @@
+.carousel-container {
+    position: relative;
+    width: 640px;
+    height: 360px;
+    overflow: hidden;
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.left-arrow-container {
+    left: 0;
+}
+
+.right-arrow-container {
+    right: 0;
+}
+
+.images-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

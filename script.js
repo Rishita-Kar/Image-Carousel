@@ -34,6 +34,10 @@ document.querySelector('.right-arrow-container').addEventListener('click', funct
 
 function slideImages () {
     const currentImageContainer = imagesContainer.querySelector(`.image-container:nth-child(${currentImageIndex + 1})`)
+    const lastNavigationCircleActive =navigation.querySelector('.navigation-circle-active')
+    const currentImageNavigationCircle = navigation.querySelector(`.navigation-circle:nth-child(${currentImageIndex + 1})`)
+    lastNavigationCircleActive.classList.remove('navigation-circle-active')
+    currentImageNavigationCircle.classList.add('navigation-circle-active')
     currentImageContainer.style.left = (imageContainerPosition * -100) + '%'
     imagesContainer.style.left = (imageContainerPosition * 100) + '%'
 }

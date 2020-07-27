@@ -1,9 +1,16 @@
 const imagesContainer = document.querySelector('.images-container')
+const navigation = document.querySelector('.navigation')
 const imageCount = document.querySelectorAll('.image-container').length
 let imageContainerPosition = 0
 let currentImageIndex = 0
 
 document.querySelectorAll('.image-container').forEach(function (imageContainer, index) {
+    const navigationCircle = document.createElement('span')
+    navigationCircle.className = 'navigation-circle'
+    navigation.appendChild(navigationCircle)
+    if (index === 0) {
+        navigationCircle.classList.add('navigation-circle-active')
+    }
     imageContainer.style.left = (index * 100) + '%'
 })
 

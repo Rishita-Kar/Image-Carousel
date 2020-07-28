@@ -52,7 +52,7 @@
     object-fit: cover;
 }
 
-.image-caption{
+.image-caption {
     position: absolute;
     bottom: 40px;
     left: 50%;
